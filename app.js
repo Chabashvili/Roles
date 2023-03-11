@@ -11,6 +11,9 @@ class User {
       this.avatar = avatar;
       this.#isSuperAdmin = isSuperAdmin;
     }
+    getRole() {
+        return this.role ? "SuperAdmin" : "Admin";
+    }
     getPrivateFeature() {
       return this.#privateFeature;
     }
